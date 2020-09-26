@@ -1,0 +1,134 @@
+h1 {
+    text-align: center;
+}
+header {
+    background-color: #26466D;
+    text-align: center;
+}
+body {
+    background-color: #d1eeee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    max-width: 50%;
+    max-height: 50%;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    padding: 3px;
+}
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #00868b;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.navbar ul li a.active {
+    background-color: #033168;
+    color: white;
+    opacity: 1;
+  }
+.navbar ul li a:hover:not(.active) {
+    background-color: #033168;
+    color:white;
+    opacity: 1;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar {
+    flex: 25%;
+}
+.middle {
+    flex: 50%;
+    text-align: center;
+}
+.right {
+    flex: 25%;
+}
+@media only screen and (max-width: 768px) {
+    .right {
+      flex-direction: column;
+      flex: 100%;
+  }
+}
+@media only screen and (max-width: 640px) {
+    .middle {
+      flex-direction: column;
+      flex: 100%;
+   }
+ }  
+.about, .vision, .contact, .office {
+    flex: 74%;
+    padding-left: 10px;
+    text-align: center;
+}
+.form {
+    flex: 73%;
+    padding: 10px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=text]:focus {
+  border: 1px solid #555;
+}
+input[type=number]:focus {
+    border: 1px solid #555;
+}
+input[type=date]:focus {
+    border: 1px solid #555;
+}
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #00868b;
+    color: white;
+    padding: 16px 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin: 4px 2px;    
+}
+footer {
+    background-color:#26466D;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer>a>i {
+    color:white;
+    font-size: 20px;
+}
+footer>p>a:link {
+    color:white;
+}
