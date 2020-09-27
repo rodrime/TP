@@ -71,6 +71,15 @@ img {
     padding-left: 10px;
     text-align: center;
 }
+.column {
+    display:flex;
+    flex-wrap: wrap;
+    height: 350px;
+    justify-content: center;
+  }
+.column > img {
+    margin: 1px;
+}
 .form {
     flex: 73%;
     padding: 10px;
