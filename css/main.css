@@ -9,10 +9,7 @@ body {
     background-color: #d1eeee;
     font-family: Arial, Helvetica, sans-serif;
 }
-img {
-    max-width: 50%;
-    max-height: 50%;
-}
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -71,14 +68,29 @@ img {
     padding-left: 10px;
     text-align: center;
 }
-.column {
-    display:flex;
+* {
+    box-sizing: border-box;
+}
+.gallery {
+    display: flex;
     flex-wrap: wrap;
-    height: 350px;
-    justify-content: center;
-  }
-.column > img {
-    margin: 1px;
+    padding: 0 2px;
+}
+.column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 2px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 70%;
+}
+@media screen and (max-width: 600px) {
+    .column  {
+      flex: 100%;
+      max-width: 100%;
+    }
 }
 .form {
     flex: 73%;
